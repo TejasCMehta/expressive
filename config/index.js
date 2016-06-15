@@ -15,9 +15,9 @@ if (process.env.NODE_ENV === 'production') {
     module.exports.database = {
         database: 'express',
         user: 'root',
-        password: 'password',
+        password: 'Hb@12345',
         server: {
-            host: '192.168.100.101',
+            host: 'localhost',
             dialect: 'mysql',
             pool: {
                 idle: false

@@ -10,7 +10,7 @@ var crypto = require('crypto');
 var ejs = require('ejs');
 
 // Config
-var port = process.env.PORT | 8080;
+var port = process.env.PORT | 9000;
 app
     .engine('html', ejs.renderFile)
     .set('views', __dirname + '/public')

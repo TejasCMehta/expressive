@@ -19,6 +19,7 @@
         "angular-material": "^1.0.7",
         "angular-material-data-table": "^0.9.15",
         "material-design-iconic-font": "^2.2.0",
-        "PACE": "pace#^1.0.2"
+        "PACE": "pace#^1.0.2",
+        "faker": "Faker#^3.0.1"
     }
 }

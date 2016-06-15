@@ -45,8 +45,9 @@
         };
     });
 
-    app.controller('IntroductionCtrl', function($scope) {
+    app.controller('IntroductionCtrl', function($scope,$mdMedia, $mdSidenav,mobileDetector) {
         // Do magic think here
+        $scope.intro = faker.lorem.paragraph();
     });
 
     app.controller('DashboardCtrl', function($scope) {
@@ -143,6 +144,21 @@
                     $scope.message = res.message;
                 }
             });
+        };
+    });
+    app.controller('ChatCtrl', function($scope,$mdMedia, $mdSidenav,mobileDetector) {
+        var main = this;
+        $scope.$mdMedia = $mdMedia;
+        main.toggleSidebar = toggleSidebar;
+        main.isMobile = mobileDetector.detect();
+
+        function toggleSidebar() {
+            $mdSidenav('sidebar').toggle();
+        }
+
+        main.user = {
+            name: faker.name.findName(),
+            avatar: faker.image.avatar()
         };
     });
 

@@ -54,6 +54,12 @@
                                     CRUD
                                 </md-button>
                             </exv-sidenav-item>
+                            <exv-sidenav-item ng-if="loggedin">
+                                <md-button class="menu-list" href="/#chat" ng-click="close()">
+                                    <md-icon md-font-icon="zmdi-layers" class="zmdi zmdi-hc-lg exv-menu-icon"></md-icon>
+                                    CHAT
+                                </md-button>
+                            </exv-sidenav-item>
                             <exv-sidenav-item>
                                 <md-button class="menu-list" href="/#to-do" ng-click="close()">
                                     <md-icon md-font-icon="zmdi-check-square" class="zmdi zmdi-hc-lg exv-menu-icon"></md-icon>

@@ -45,6 +45,12 @@
                 templateUrl: '/templates/sandbox.html',
                 controller: 'SandboxCtrl'
             })
+            .when('/chat', {
+                title: 'Expressive : Chat',
+                templateUrl: '/templates/chat-share.html',
+                controller: 'ChatCtrl',
+                controllerAs: 'main'
+            })
             .when('/to-do', {
                 title: 'Expressive : To-Do',
                 templateUrl: '/templates/to-do.html',

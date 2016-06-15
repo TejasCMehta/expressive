@@ -161,7 +161,7 @@ gulp.task('inject_production', ['scripts_production', 'sass_production', 'bower_
 // Watch
 gulp.task('browser-sync', ['nodemon'], function() {
 	browserSync.init(null, {
-		proxy: "http://localhost:8080",
+		proxy: "http://localhost:9000",
         files: ["public/**/*.*"],
         browser: "google chrome",
         port: 7000,
